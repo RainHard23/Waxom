@@ -34,3 +34,39 @@ body {
 }
 /*  */
 
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 51px;
+}
+
+.header-logo {
+    font-size: 34px;
+    line-height: 40px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    font-size: 14px;
+    
+}
+
+.nav-link {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    line-height: 30px;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-top: 18px;
+    margin-right: 24px;
+
+    transition: color .2s linear;
+}
+/*  */
+
+.nav-link:hover {
+    color: #C7B299;
+}
