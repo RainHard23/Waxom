@@ -15,3 +15,22 @@ function powersOfTwo(n){
         return result
   }
 //   4
+function mergeArrays(arr1, arr2) {
+    let Arr = [].concat(arr1, arr2);
+        
+        for (let i = 0; i < Arr.length; i++) {
+        
+          function compare (a, b) {
+          if (a > b) return 1;
+          if (a == b) return 0;
+          if (a < b) return -1;
+          }
+        
+          Arr.sort(compare);
+        }
+        
+        let Array = Arr.filter((item, index) => {
+            return Arr.indexOf(item) === index
+        });
+        return Array;
+  }
