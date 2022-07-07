@@ -96,4 +96,11 @@ function removeChar(str){
     return str.slice(1, -1);
    
    };
-   
+//    10
+const areaOrPerimeter = function(l , w) {
+    if (l == w) {
+      return l * w;
+    }else {
+      return (l + w) * 2;
+    }
+  };
