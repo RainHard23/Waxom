@@ -86,3 +86,8 @@ function sortTwisted37(array) {
     
     return array.slice().sort((a,b) => twist(a) - twist(b));
   }
+//   8
+function remove (string) {
+    return string.replace(/[!]$/, "");
+    alert("string")
+   }
