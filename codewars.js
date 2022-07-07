@@ -75,3 +75,14 @@ function narcissistic(value) {
     }
   }
 //   7
+
+function sortTwisted37(array) {
+  
+    const rep = {7 : 3, 3 : 7};
+    
+    function twist(x) {
+      return parseInt(x.toString().replace(/[37]/g, a => rep[a]));
+    }
+    
+    return array.slice().sort((a,b) => twist(a) - twist(b));
+  }
