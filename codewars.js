@@ -91,3 +91,9 @@ function remove (string) {
     return string.replace(/[!]$/, "");
     alert("string")
    }
+//    9
+function removeChar(str){
+    return str.slice(1, -1);
+   
+   };
+   
