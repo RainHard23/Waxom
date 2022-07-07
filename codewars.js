@@ -57,3 +57,21 @@ const rps = (p1, p2) => {
     }
   };
 //   6
+function narcissistic(value) {
+    // Code me to return true or false
+    let list = value.toString().split(''),
+        sum = 0,
+        result = value;
+    
+      for (let i = 0; i < list.length; i++){
+        list[i] = Math.pow(list[i], list.length);
+        sum += list[i];
+      }
+    if (sum == result) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+//   7
